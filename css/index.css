@@ -1,0 +1,75 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html, body {
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+  background: black;
+  width: 90%;
+  margin: 0 auto; }
+
+a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase; }
+
+li {
+  list-style: none; }
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10rem;
+  padding: 2rem; }
+  .header__logo a {
+    text-transform: none;
+    font-size: 1.5rem; }
+
+.header-nav__lista {
+  display: flex;
+  gap: 2rem; }
+
+.header-nav__item :hover {
+  color: goldenrod;
+  text-shadow: goldenrod 1px 1px 1px; }
+
+.header-nav__link {
+  font-size: 0.7rem; }
+
+.main {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 2rem; }
+  .main-contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 3rem; }
+    .main-contenedor__uno {
+      width: 50%; }
+      .main-contenedor__uno h4 {
+        color: goldenrod;
+        margin-bottom: 2rem; }
+      .main-contenedor__uno h2 {
+        color: white;
+        margin-bottom: 1rem; }
+      .main-contenedor__uno p {
+        color: white; }
+    .main-contenedor__dos img {
+      width: 600px;
+      border: 1px solid white; }
+    .main-contenedor__column {
+      display: flex;
+      margin: 2rem; }
+    .main-contenedor__box {
+      display: flex; }
+      .main-contenedor__box i {
+        color: goldenrod;
+        margin: 0 1rem;
+        font-size: 2rem; }
+      .main-contenedor__box h3 {
+        color: white; }

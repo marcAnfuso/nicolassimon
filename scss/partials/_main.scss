@@ -1,0 +1,57 @@
+
+.main {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2rem;
+
+    &-contenedor {
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+
+        &__uno {
+            width: 50%;
+            h4 {
+                color: goldenrod;
+                margin-bottom: 2rem;
+            }
+
+            h2 {
+                color: white;
+                margin-bottom: 1rem;
+            }
+
+            p {
+                color: white;
+            }
+        }
+
+        &__dos {
+
+            img {
+                width: 600px;
+                border: 1px solid white;
+            }
+        }
+
+        &__column {
+            display: flex;
+            margin: 2rem;
+        }
+
+        &__box {
+
+            display: flex;
+
+            i {
+                color: goldenrod;
+                margin: 0 1rem;
+                font-size: 2rem;
+            }
+
+            h3 {
+                color: white;
+            }
+        }
+    }
+}

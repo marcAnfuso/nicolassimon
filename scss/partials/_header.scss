@@ -1,0 +1,37 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10rem;
+    padding: 2rem;
+
+    &__logo {
+
+        a {
+            text-transform: none;
+            font-size: 1.5rem;
+        }
+    }
+
+}
+
+.header-nav {
+
+
+    &__lista {
+        display: flex;
+        gap: 2rem;
+    }
+
+    &__item {
+
+        :hover {
+            color:goldenrod;
+            text-shadow: goldenrod 1px 1px 1px;
+        }
+    }
+
+    &__link {
+        font-size: 0.7rem;
+    }
+}
