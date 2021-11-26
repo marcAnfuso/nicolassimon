@@ -30,9 +30,16 @@
         &__uno {
             width: 40%;
             padding: 1rem;
-            height: 650px;
+            height: 700px;
             border-left: 1px solid grey;
             border-right: 1px solid grey;
+            background: linear-gradient(to right, black, rgb(5,5,5), rgb(10,10,10));
+
+            h3 {
+                color: white;
+                text-transform: uppercase;
+                font-style: italic;
+            }
 
             p {
                 color: rgb(196, 190, 190);
@@ -73,6 +80,27 @@
     }
 }
 
+.wppContact {
+    width: 120px;
+    position:fixed;
+    bottom: 3rem;
+    right: 3rem;
+    z-index: 100;
+    padding: 1rem;
+    border: 1px solid grey;
+    border-radius: 5px;
+    text-align: center;
+    background: linear-gradient(to left, black, rgb(5,5,5), rgb(10,10,10));
+    p {
+        color: white;       
+    }
+
+    i {
+        font-size: 35px;
+        color: green;
+    }
+}
+
 #contactos {
     margin-top: 2rem;
 
@@ -85,7 +113,7 @@
         color: white;
         font-size: 25px;
         text-transform: uppercase;
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
     }
 }
 
@@ -133,4 +161,20 @@
         max-width: 100%;
     }
     
+    .wppContact {
+        opacity: 0.6;
+        width: 100px;
+        bottom: 1rem;
+        right: 1rem;
+        padding: 0.5rem;
+        background: linear-gradient(to left, black, rgb(5,5,5), rgb(10,10,10));
+        p {
+            display: none;      
+        }
+    
+        i {
+            font-size: 35px;
+            color: green;
+        }
+    }
 }
