@@ -25,13 +25,12 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        gap: 3rem;
         margin: 0 20rem;
 
         &__uno {
-            width: 50%;
+            width: 40%;
             padding: 1rem;
-            height: 400px;
+            height: 650px;
             border-left: 1px solid grey;
             border-right: 1px solid grey;
 
@@ -44,8 +43,10 @@
 
         &__dos {
 
+            margin-bottom: 2rem;
             img {
-                width: 600px;
+                max-width: 500px;
+                height: 700px;
                 border: 1px solid white;
             }
         }
@@ -97,6 +98,38 @@
     p {
         span {
             color: white;
+            font-size: 15px;
+        }
+
+        a {
+            text-transform: lowercase;
+            color: orange;
+            text-decoration: underline;
         }
     }
+}
+
+.carousel {
+    width: 400px;
+    max-width: 500px;
+    height: 700px;
+}
+
+// Responsive 
+
+@media screen and (max-width: 500px) {
+    .main-contenedor {
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+
+        &__uno {
+            width: 100%;
+        }
+    }
+
+    .carousel {
+        max-width: 100%;
+    }
+    
 }

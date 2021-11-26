@@ -8,7 +8,6 @@
 
 html, body {
   font-family: 'Outfit', sans-serif;
-  overflow-x: hidden;
   background: black;
   width: 100%;
   margin: 0 auto; }
@@ -30,7 +29,8 @@ li {
   background-color: #111010; }
   .header__logo a {
     text-transform: none;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    letter-spacing: 10px; }
 
 .header-nav__lista {
   display: flex;
@@ -42,6 +42,16 @@ li {
 
 .header-nav__link {
   font-size: 0.7rem; }
+
+@media screen and (max-width: 500px) {
+  .header {
+    flex-direction: column;
+    gap: 0rem; }
+    .header__logo {
+      text-align: center; }
+  .header-nav__lista {
+    flex-direction: column;
+    display: none; } }
 
 .main {
   width: 90%;
@@ -61,20 +71,22 @@ li {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    gap: 3rem;
     margin: 0 20rem; }
     .main-contenedor__uno {
-      width: 50%;
+      width: 40%;
       padding: 1rem;
-      height: 400px;
+      height: 650px;
       border-left: 1px solid grey;
       border-right: 1px solid grey; }
       .main-contenedor__uno p {
         color: #c4bebe;
         font-size: 20px; }
-    .main-contenedor__dos img {
-      width: 600px;
-      border: 1px solid white; }
+    .main-contenedor__dos {
+      margin-bottom: 2rem; }
+      .main-contenedor__dos img {
+        max-width: 500px;
+        height: 700px;
+        border: 1px solid white; }
     .main-contenedor__column {
       display: flex;
       margin: 2rem; }
@@ -105,4 +117,24 @@ li {
   gap: 1rem;
   margin: 0.5rem; }
   .contact-item p span {
-    color: white; }
+    color: white;
+    font-size: 15px; }
+  .contact-item p a {
+    text-transform: lowercase;
+    color: orange;
+    text-decoration: underline; }
+
+.carousel {
+  width: 400px;
+  max-width: 500px;
+  height: 700px; }
+
+@media screen and (max-width: 500px) {
+  .main-contenedor {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto; }
+    .main-contenedor__uno {
+      width: 100%; }
+  .carousel {
+    max-width: 100%; } }

@@ -11,6 +11,7 @@
         a {
             text-transform: none;
             font-size: 1.5rem;
+            letter-spacing: 10px;
         }
     }
 
@@ -34,5 +35,23 @@
 
     &__link {
         font-size: 0.7rem;
+    }
+}
+
+// Responsive 
+
+@media screen and (max-width: 500px) {
+    .header {
+        flex-direction: column;
+        gap: 0rem;
+
+        &__logo {
+            text-align: center;
+        }
+    }
+    
+    .header-nav__lista {
+        flex-direction: column;
+        display: none;
     }
 }
