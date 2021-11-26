@@ -122,7 +122,7 @@ li {
   .contact-item p a {
     text-transform: lowercase;
     color: orange;
-    text-decoration: underline; }
+    border-bottom: 1px solid; }
 
 .carousel {
   width: 400px;
