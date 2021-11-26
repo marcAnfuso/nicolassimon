@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap");
 *,
 *::after,
 *::before {
@@ -6,10 +7,10 @@
   box-sizing: border-box; }
 
 html, body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Outfit', sans-serif;
   overflow-x: hidden;
   background: black;
-  width: 90%;
+  width: 100%;
   margin: 0 auto; }
 
 a {
@@ -25,7 +26,8 @@ li {
   flex-direction: row;
   justify-content: center;
   gap: 10rem;
-  padding: 2rem; }
+  padding: 2rem;
+  background-color: #111010; }
   .header__logo a {
     text-transform: none;
     font-size: 1.5rem; }
@@ -45,20 +47,31 @@ li {
   width: 90%;
   margin: 0 auto;
   margin-top: 2rem; }
+  .main-head {
+    text-align: center;
+    margin-bottom: 3rem; }
+    .main-head h2 {
+      color: goldenrod;
+      margin-bottom: 1rem; }
+    .main-head h3 {
+      color: white;
+      margin-bottom: 1rem;
+      font-size: 25px; }
   .main-contenedor {
     display: flex;
-    justify-content: center;
-    gap: 3rem; }
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 3rem;
+    margin: 0 20rem; }
     .main-contenedor__uno {
-      width: 50%; }
-      .main-contenedor__uno h4 {
-        color: goldenrod;
-        margin-bottom: 2rem; }
-      .main-contenedor__uno h2 {
-        color: white;
-        margin-bottom: 1rem; }
+      width: 50%;
+      padding: 1rem;
+      height: 400px;
+      border-left: 1px solid grey;
+      border-right: 1px solid grey; }
       .main-contenedor__uno p {
-        color: white; }
+        color: #c4bebe;
+        font-size: 20px; }
     .main-contenedor__dos img {
       width: 600px;
       border: 1px solid white; }
@@ -73,3 +86,23 @@ li {
         font-size: 2rem; }
       .main-contenedor__box h3 {
         color: white; }
+
+#contactos {
+  margin-top: 2rem; }
+  #contactos i {
+    color: goldenrod;
+    padding-top: 0.5rem;
+    font-size: 20px; }
+  #contactos h3 {
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 1rem; }
+
+.contact-item {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin: 0.5rem; }
+  .contact-item p span {
+    color: white; }
