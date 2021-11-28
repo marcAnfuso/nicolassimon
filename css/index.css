@@ -24,13 +24,19 @@ li {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   gap: 10rem;
-  padding: 2rem;
-  background-color: #111010; }
+  border-bottom: 1px solid #0f0b01;
+  background: linear-gradient(to right, #201804, black, black, #201804); }
+  .header img {
+    width: 250px; }
   .header__logo a {
     text-transform: none;
     font-size: 1.5rem;
     letter-spacing: 10px; }
+    .header__logo a:hover {
+      color: #201804;
+      text-shadow: goldenrod 1px 1px 2px; }
 
 .header-nav__lista {
   display: flex;
@@ -63,7 +69,7 @@ li {
     display: none; } }
 
 .main {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   margin-top: 2rem; }
   .main-head {

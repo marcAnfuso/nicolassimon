@@ -2,17 +2,28 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     gap: 10rem;
-    padding: 2rem;
-    background-color: rgb(17, 16, 16);
+    border-bottom: 1px solid rgb(15, 11, 1);
+    background: linear-gradient(to right, rgb(32, 24, 4), black,black, rgb(32, 24, 4));
+
+    img {
+        width: 250px;
+    }
 
     &__logo {
 
         a {
             text-transform: none;
             font-size: 1.5rem;
-            letter-spacing: 10px;   
+            letter-spacing: 10px;  
+            
+            &:hover {
+                color: rgb(32, 24, 4);
+                text-shadow: goldenrod 1px 1px 2px;
+            }
         }
+
     }
 
 }

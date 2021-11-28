@@ -3,7 +3,7 @@ $('.btnMostrarContent').click(function(){
     var el = document.getElementById('contUno');
     if (document.getElementById){
     el.style.display = (el.style.display == 'none') ? 'block' : 'none';
-    el.style.visibility = (el.style.visibility == 'hidden') ? 'visible' : 'hidden'; //damos un atributo display:none que oculta el div
+    el.style.visibility = (el.style.visibility == 'hidden') ? 'visible' : 'hidden';
     }
 });
 
