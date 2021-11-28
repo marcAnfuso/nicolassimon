@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Outfit:wght@200&display=swap");
 *,
 *::after,
 *::before {
@@ -81,7 +82,9 @@ li {
     .main-head h3 {
       color: white;
       margin-bottom: 1rem;
-      font-size: 25px; }
+      font-size: 25px;
+      font-weight: 800;
+      font-family: 'IBM Plex Sans', sans-serif; }
   .main-contenedor {
     display: flex;
     flex-direction: row;
@@ -95,9 +98,10 @@ li {
       border-right: 1px solid grey;
       background: linear-gradient(to right, black, #050505, #0a0a0a); }
       .main-contenedor__uno h3 {
-        color: white;
+        color: goldenrod;
         text-transform: uppercase;
-        font-style: italic; }
+        font-style: italic;
+        font-size: 1rem; }
       .main-contenedor__uno p {
         color: #c4bebe;
         font-size: 20px; }
@@ -130,6 +134,8 @@ li {
   border-radius: 5px;
   text-align: center;
   background: linear-gradient(to left, black, #050505, #0a0a0a); }
+  .wppContact:hover {
+    background: linear-gradient(to left, black, #363535, #0a0a0a); }
   .wppContact p {
     color: white; }
   .wppContact i {
